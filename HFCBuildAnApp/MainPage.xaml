@@ -8,6 +8,20 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="button1" Content="Show a message" HorizontalAlignment="Left" Height="60" Margin="155,80,0,0" VerticalAlignment="Top" Width="250" Click="button1_Click"/>
+        <Button x:Name="button2" Content="If/else" HorizontalAlignment="Left" Height="60" Margin="123,80,0,0" VerticalAlignment="Top" Width="250" Grid.Column="1" Click="button2_Click"/>
+        <Button x:Name="button3" Content="A loop" HorizontalAlignment="Left" Height="60" Margin="123,81.4,0,0" VerticalAlignment="Top" Width="250" Grid.Column="1" Grid.Row="1" Click="button3_Click"/>
+        <Button x:Name="button4" Content="Another conditional test" HorizontalAlignment="Left" Height="60" Margin="155,81.4,0,0" VerticalAlignment="Top" Width="250" Grid.Row="1" Click="button4_Click"/>
+        <TextBlock x:Name="myLabel" Grid.ColumnSpan="2" Height="65" Margin="390,68.6,394,80" Grid.Row="2" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Center" Width="240" HorizontalAlignment="Center" Style="{StaticResource BodyTextBlockStyle}"/>
 
     </Grid>
 </Page>
